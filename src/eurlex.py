@@ -12,6 +12,39 @@ from urllib.parse import urljoin
 
 warnings.filterwarnings("ignore", category=XMLParsedAsHTMLWarning)
 
+# Request timeout and error handling
+REQUEST_TIMEOUT = 30
+MAX_RETRIES = 3
+
+def safe_request(url, timeout=REQUEST_TIMEOUT, max_retries=MAX_RETRIES):
+    """
+    Make a safe HTTP request with timeout and basic error handling.
+    
+    Args:
+        url (str): URL to request
+        timeout (int): Request timeout in seconds
+        max_retries (int): Maximum number of retry attempts
+        
+    Returns:
+        requests.Response: Response object
+        
+    Raises:
+        requests.exceptions.RequestException: For network/HTTP errors
+    """
+    for attempt in range(max_retries):
+        try:
+            response = requests.get(url, timeout=timeout)
+            response.raise_for_status()  # Raise exception for HTTP errors
+            return response
+        except requests.exceptions.RequestException as e:
+            if attempt == max_retries - 1:
+                raise e
+            # Optional: Add exponential backoff for retries
+            import time
+            time.sleep(2 ** attempt)
+    
+    return None  # This line should never be reached
+
 def parse_title(soup):
     title_text = ''
     tit_1_div = soup.find('div', id="tit_1")
@@ -295,9 +328,9 @@ def get_summary_by_celex_id(celex_id: str, language: str = "en") -> dict:
     Support multiple languages
     """        
     url = f"https://eur-lex.europa.eu/legal-content/{language}/LSU/?uri=CELEX:{celex_id}"        
-    response = requests.get(url)     
+    response = safe_request(url)     
 
-    soup = BeautifulSoup(response.text, 'lxml')
+    soup = BeautifulSoup(response.text, 'html.parser')
 
     # title
     title_h1 = soup.find("h1", class_="ti-main")
@@ -341,8 +374,8 @@ def get_data_by_celex_id(celex_id: str, language: str = "en") -> dict:
 
     url = f"https://eur-lex.europa.eu/legal-content/{language}/TXT/HTML/?uri=CELEX:{celex_id}"    
     table_url = f"https://eur-lex.europa.eu/legal-content/{language}/ALL/?uri=CELEX:{celex_id}"
-    response = requests.get(url)     
-    soup = BeautifulSoup(response.text, 'lxml')
+    response = safe_request(url)     
+    soup = BeautifulSoup(response.text, 'html.parser')
 
     if celex_id[5:7] == "PC":        
         return parse_pc_soup_data(soup)    
@@ -382,8 +415,8 @@ def get_data_by_celex_id(celex_id: str, language: str = "en") -> dict:
 def extract_related_documents(celex_id, language, table_id='relatedDocsTbMS'):
     base_url = "https://eur-lex.europa.eu"
     table_url = f"https://eur-lex.europa.eu/legal-content/{language}/ALL/?uri=CELEX:{celex_id}"
-    table_response = requests.get(table_url)     
-    table_soup = BeautifulSoup(table_response.text, 'lxml')
+    table_response = safe_request(table_url)     
+    table_soup = BeautifulSoup(table_response.text, 'html.parser')
 
     table = table_soup.find('table', id=table_id)
     if not table:

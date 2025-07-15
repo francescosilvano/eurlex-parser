@@ -1490,50 +1490,6 @@
                     "celex": "32012R0648",
                     "url": "https://eur-lex.europa.eu/legal-content/EN/AUTO/?uri=CELEX:32012R0648"
                 },
-                "Comment": "Deletion",
-                "Subdivision concerned": "annex I section II point (c)",
-                "From": "17/01/2025",
-                "To": ""
-            },
-            {
-                "Relation": "Modifies",
-                "Act": {
-                    "celex": "32012R0648",
-                    "url": "https://eur-lex.europa.eu/legal-content/EN/AUTO/?uri=CELEX:32012R0648"
-                },
-                "Comment": "Deletion",
-                "Subdivision concerned": "annex III section II point (f)",
-                "From": "17/01/2025",
-                "To": ""
-            },
-            {
-                "Relation": "Modifies",
-                "Act": {
-                    "celex": "32012R0648",
-                    "url": "https://eur-lex.europa.eu/legal-content/EN/AUTO/?uri=CELEX:32012R0648"
-                },
-                "Comment": "Deletion",
-                "Subdivision concerned": "article 26 paragraph 6",
-                "From": "17/01/2025",
-                "To": ""
-            },
-            {
-                "Relation": "Modifies",
-                "Act": {
-                    "celex": "32012R0648",
-                    "url": "https://eur-lex.europa.eu/legal-content/EN/AUTO/?uri=CELEX:32012R0648"
-                },
-                "Comment": "Deletion",
-                "Subdivision concerned": "article 80 paragraph 1",
-                "From": "17/01/2025",
-                "To": ""
-            },
-            {
-                "Relation": "Modifies",
-                "Act": {
-                    "celex": "32012R0648",
-                    "url": "https://eur-lex.europa.eu/legal-content/EN/AUTO/?uri=CELEX:32012R0648"
-                },
                 "Comment": "Replacement",
                 "Subdivision concerned": "annex I section II point (a)",
                 "From": "17/01/2025",
@@ -1556,8 +1512,30 @@
                     "celex": "32012R0648",
                     "url": "https://eur-lex.europa.eu/legal-content/EN/AUTO/?uri=CELEX:32012R0648"
                 },
+                "Comment": "Deletion",
+                "Subdivision concerned": "annex I section II point (c)",
+                "From": "17/01/2025",
+                "To": ""
+            },
+            {
+                "Relation": "Modifies",
+                "Act": {
+                    "celex": "32012R0648",
+                    "url": "https://eur-lex.europa.eu/legal-content/EN/AUTO/?uri=CELEX:32012R0648"
+                },
                 "Comment": "Replacement",
                 "Subdivision concerned": "annex III section II point (c)",
+                "From": "17/01/2025",
+                "To": ""
+            },
+            {
+                "Relation": "Modifies",
+                "Act": {
+                    "celex": "32012R0648",
+                    "url": "https://eur-lex.europa.eu/legal-content/EN/AUTO/?uri=CELEX:32012R0648"
+                },
+                "Comment": "Deletion",
+                "Subdivision concerned": "annex III section II point (f)",
                 "From": "17/01/2025",
                 "To": ""
             },
@@ -1580,6 +1558,17 @@
                 },
                 "Comment": "Replacement",
                 "Subdivision concerned": "article 26 paragraph 3",
+                "From": "17/01/2025",
+                "To": ""
+            },
+            {
+                "Relation": "Modifies",
+                "Act": {
+                    "celex": "32012R0648",
+                    "url": "https://eur-lex.europa.eu/legal-content/EN/AUTO/?uri=CELEX:32012R0648"
+                },
+                "Comment": "Deletion",
+                "Subdivision concerned": "article 26 paragraph 6",
                 "From": "17/01/2025",
                 "To": ""
             },
@@ -1635,6 +1624,17 @@
                 },
                 "Comment": "Replacement",
                 "Subdivision concerned": "article 79 paragraph 2",
+                "From": "17/01/2025",
+                "To": ""
+            },
+            {
+                "Relation": "Modifies",
+                "Act": {
+                    "celex": "32012R0648",
+                    "url": "https://eur-lex.europa.eu/legal-content/EN/AUTO/?uri=CELEX:32012R0648"
+                },
+                "Comment": "Deletion",
+                "Subdivision concerned": "article 80 paragraph 1",
                 "From": "17/01/2025",
                 "To": ""
             },
@@ -1710,8 +1710,8 @@
                     "celex": "32014R0909",
                     "url": "https://eur-lex.europa.eu/legal-content/EN/AUTO/?uri=CELEX:32014R0909"
                 },
-                "Comment": "Deletion",
-                "Subdivision concerned": "article 45 paragraph 2",
+                "Comment": "Replacement",
+                "Subdivision concerned": "article 45 paragraph 1",
                 "From": "17/01/2025",
                 "To": ""
             },
@@ -1721,8 +1721,8 @@
                     "celex": "32014R0909",
                     "url": "https://eur-lex.europa.eu/legal-content/EN/AUTO/?uri=CELEX:32014R0909"
                 },
-                "Comment": "Replacement",
-                "Subdivision concerned": "article 45 paragraph 1",
+                "Comment": "Deletion",
+                "Subdivision concerned": "article 45 paragraph 2",
                 "From": "17/01/2025",
                 "To": ""
             },
@@ -1817,6 +1817,39 @@
                 "To": ""
             },
             {
+                "Relation": "Corrected by",
+                "Act": {
+                    "celex": "32022R2554R(04)",
+                    "url": "https://eur-lex.europa.eu/legal-content/EN/AUTO/?uri=CELEX:32022R2554R(04)"
+                },
+                "Comment": "(FR, RO, SL)",
+                "Subdivision concerned": "",
+                "From": "",
+                "To": ""
+            },
+            {
+                "Relation": "Corrected by",
+                "Act": {
+                    "celex": "32022R2554R(05)",
+                    "url": "https://eur-lex.europa.eu/legal-content/EN/AUTO/?uri=CELEX:32022R2554R(05)"
+                },
+                "Comment": "(DE)",
+                "Subdivision concerned": "",
+                "From": "",
+                "To": ""
+            },
+            {
+                "Relation": "Corrected by",
+                "Act": {
+                    "celex": "32022R2554R(06)",
+                    "url": "https://eur-lex.europa.eu/legal-content/EN/AUTO/?uri=CELEX:32022R2554R(06)"
+                },
+                "Comment": "(NL)",
+                "Subdivision concerned": "",
+                "From": "",
+                "To": ""
+            },
+            {
                 "Relation": "Completed by",
                 "Act": {
                     "celex": "32024R1502",
@@ -1836,6 +1869,94 @@
                 "Comment": "",
                 "Subdivision concerned": "",
                 "From": "19/06/2024",
+                "To": ""
+            },
+            {
+                "Relation": "Completed by",
+                "Act": {
+                    "celex": "32024R1772",
+                    "url": "https://eur-lex.europa.eu/legal-content/EN/AUTO/?uri=CELEX:32024R1772"
+                },
+                "Comment": "",
+                "Subdivision concerned": "",
+                "From": "15/07/2024",
+                "To": ""
+            },
+            {
+                "Relation": "Completed by",
+                "Act": {
+                    "celex": "32024R1773",
+                    "url": "https://eur-lex.europa.eu/legal-content/EN/AUTO/?uri=CELEX:32024R1773"
+                },
+                "Comment": "",
+                "Subdivision concerned": "",
+                "From": "15/07/2024",
+                "To": ""
+            },
+            {
+                "Relation": "Completed by",
+                "Act": {
+                    "celex": "32024R1774",
+                    "url": "https://eur-lex.europa.eu/legal-content/EN/AUTO/?uri=CELEX:32024R1774"
+                },
+                "Comment": "",
+                "Subdivision concerned": "",
+                "From": "15/07/2024",
+                "To": ""
+            },
+            {
+                "Relation": "Completed by",
+                "Act": {
+                    "celex": "32025R0295",
+                    "url": "https://eur-lex.europa.eu/legal-content/EN/AUTO/?uri=CELEX:32025R0295"
+                },
+                "Comment": "",
+                "Subdivision concerned": "",
+                "From": "05/03/2025",
+                "To": ""
+            },
+            {
+                "Relation": "Completed by",
+                "Act": {
+                    "celex": "32025R0301",
+                    "url": "https://eur-lex.europa.eu/legal-content/EN/AUTO/?uri=CELEX:32025R0301"
+                },
+                "Comment": "",
+                "Subdivision concerned": "",
+                "From": "12/03/2025",
+                "To": ""
+            },
+            {
+                "Relation": "Completed by",
+                "Act": {
+                    "celex": "32025R0420",
+                    "url": "https://eur-lex.europa.eu/legal-content/EN/AUTO/?uri=CELEX:32025R0420"
+                },
+                "Comment": "",
+                "Subdivision concerned": "",
+                "From": "13/04/2025",
+                "To": ""
+            },
+            {
+                "Relation": "Completed by",
+                "Act": {
+                    "celex": "32025R0532",
+                    "url": "https://eur-lex.europa.eu/legal-content/EN/AUTO/?uri=CELEX:32025R0532"
+                },
+                "Comment": "",
+                "Subdivision concerned": "",
+                "From": "22/07/2025",
+                "To": ""
+            },
+            {
+                "Relation": "Completed by",
+                "Act": {
+                    "celex": "32025R1190",
+                    "url": "https://eur-lex.europa.eu/legal-content/EN/AUTO/?uri=CELEX:32025R1190"
+                },
+                "Comment": "",
+                "Subdivision concerned": "",
+                "From": "08/07/2025",
                 "To": ""
             }
         ]
